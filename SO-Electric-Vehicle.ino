@@ -12,9 +12,16 @@ Adafruit_DCMotor *backRight = motorShield.getMotor(4);
 
 void setup(){
 
+  motorShield.begin();
+  frontLeft->setSpeed(100);
+  frontRight->setSpeed(100);
+  backLeft->setSpeed(100);
+  backRight->setSpeed(100);
 
 }
 
 void loop(){
+
+  frontLeft->run(FORWARD);
 
 }
